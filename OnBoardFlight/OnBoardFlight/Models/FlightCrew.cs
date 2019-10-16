@@ -10,7 +10,9 @@ namespace OnBoardFlight.Models
 
         #region Properties
 
-        public string UserName { get; set; }
+        public int FlightCrewId { get; set; }
+
+        public string Email { get; set; }
 
         public string FirstName { get; set; }
 
@@ -26,9 +28,9 @@ namespace OnBoardFlight.Models
         {
         }
 
-        public FlightCrew(string userName, string firstName, string lastName)
+        public FlightCrew(string email, string firstName, string lastName)
         {
-            UserName = userName;
+            Email = userName;
             FirstName = firstName;
             LastName = lastName;
         }
