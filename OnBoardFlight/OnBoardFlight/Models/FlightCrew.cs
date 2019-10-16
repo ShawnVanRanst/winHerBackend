@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace OnBoardFlight.Models
 {
-    public class FlightCrew
+    public class FlightCrewMember
     {
 
         #region Properties
@@ -24,13 +24,13 @@ namespace OnBoardFlight.Models
 
         #region Constructors
 
-        public FlightCrew()
+        public FlightCrewMember()
         {
         }
 
-        public FlightCrew(string email, string firstName, string lastName)
+        public FlightCrewMember(string email, string firstName, string lastName)
         {
-            Email = userName;
+            Email = email;
             FirstName = firstName;
             LastName = lastName;
         }
